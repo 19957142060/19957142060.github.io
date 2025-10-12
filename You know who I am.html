@@ -96,8 +96,9 @@ tw-link.special {
 
 
 
-(t8n-time:15s)+(t8n:&quot;fade&quot;)[[[^^开始吧^^|引子]]]</tw-passagedata><tw-passagedata pid="2" name="hal.tracks" tags="" position="725,400" size="100,100">mymusic:https://19957142060.github.io/mymusic.mp3
-owlsong:https://19957142060.github.io/owlsong-c-1740567601849.mp3</tw-passagedata><tw-passagedata pid="3" name="引子" tags="" position="625,525" size="100,100">(t8n-time:4s)+(t8n:&quot;fade&quot;)[{(live: 20s)[(replace: ?text1)[(text-colour:#900000)[(text-style:&quot;italic&quot;,&quot;condense&quot;)[&lt;big&gt;你以为你会有安宁的日子可以过吗？你以为可以逃避吗？奈费勒卿啊！你是这个世界上最不擅长逃避的人了！从你跪在阶下那一刻起，一切就已经无法挽回了。死志是不足够的，你以为死是那样容易，好叫你在安全的虚无之中免罪吗？]]]]}|text1&gt;[你在平静中度过了一生。
+(t8n-time:15s)+(t8n:&quot;fade&quot;)[[[^^开始吧^^|引子]]]</tw-passagedata><tw-passagedata pid="2" name="hal.tracks" tags="" position="750,400" size="100,100">mymusic:https://19957142060.github.io/mymusic.mp3
+owlsong:https://19957142060.github.io/owlsong-c-1740567601849.mp3
+timetakes:https://19957142060.github.io/Timetakesthetimetimetakes.mp3</tw-passagedata><tw-passagedata pid="3" name="引子" tags="" position="625,525" size="100,100">(t8n-time:4s)+(t8n:&quot;fade&quot;)[{(live: 20s)[(replace: ?text1)[(text-colour:#900000)[(text-style:&quot;italic&quot;,&quot;condense&quot;)[&lt;big&gt;你以为你会有安宁的日子可以过吗？你以为可以逃避吗？奈费勒卿啊！你是这个世界上最不擅长逃避的人了！从你跪在阶下那一刻起，一切就已经无法挽回了。死志是不足够的，你以为死是那样容易，好叫你在安全的虚无之中免罪吗？]]]]}|text1&gt;[你在平静中度过了一生。
 
 
 在黑色太阳的灼烧之下，这可以说是罕见的幸运一桩，你在多少人避之不及的宫廷间不但保住了性命，还得以留下了能够说话的舌头。一直到你老去，在自己的庭院里咽下最后一口气，你所幻想的变革都没有发生。你从未记录过自己的诞辰，但你清楚地记得，王是在不惑之年时战死在一次征服中的。各大世家贵族将帝国看做一块蛋糕，你与你的家族顶多算一片为之添彩的糖衣。你还能做什么呢？野蛮的时代不需要你这样的人，你比谁都更清楚。
@@ -111,9 +112,17 @@ owlsong:https://19957142060.github.io/owlsong-c-1740567601849.mp3</tw-passagedat
 
 (t8n-delay:3s)+(t8n:&quot;fade&quot;)[{(live: 20s)[(replace: ?text)[(text-colour:#900000)[(text-style:&quot;condense&quot;)[[[&lt;big&gt;&lt;big&gt;我们地狱见我们地狱见我们地狱见|坏结局]]]]]]}|text&gt;[[[你并不相信神祇存在，祂若有眼睛，也只会对人世投下冷淡一瞥。气绝之时，你没有感到遗憾。|好结局]]]]</tw-passagedata><tw-passagedata pid="4" name="好结局" tags="" position="550,650" size="100,100">(t8n-time:5s)+(t8n:&quot;fade&quot;)[&#39;&#39;[你睁开眼睛。
 
-新的一天如约而至。]&#39;&#39;]</tw-passagedata><tw-passagedata pid="5" name="坏结局" tags="" position="700,650" size="100,100">(t8n-time:5s)+(t8n:&quot;fade&quot;)[&#39;&#39;[(text-colour:red)[你睁开眼睛。
+新的一天如约而至。]&#39;&#39;]</tw-passagedata><tw-passagedata pid="5" name="坏结局" tags="" position="700,650" size="100,100">{(group: &#39;playing&#39;, &#39;stop&#39;)
+(track: &#39;timetakes&#39;, &#39;play&#39;)
+(track: &#39;timetakes&#39;, &#39;loop&#39;, true)
+(track: &#39;timetakes&#39;, &#39;playwhenpossible&#39;)}
 
-太阳照常升起。]]&#39;&#39;]</tw-passagedata></tw-storydata>
+(t8n-time:5s)+(t8n:&quot;fade&quot;)[&#39;&#39;[(text-colour:red)[你睁开眼睛。
+
+太阳照常升起。]]&#39;&#39;]
+
+(t8n-time:8s)+(t8n:&quot;fade&quot;)[&lt;img src=&quot;https://19957142060.github.io/aeb986acd3b3b2fdb31deaf2bf931c15.png&quot; style=&quot;width: 400px; height:400px;&quot;&gt;]
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
